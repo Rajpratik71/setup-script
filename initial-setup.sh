@@ -6,6 +6,8 @@
 #
 ## By : https://github.com/rajpratik71
 
+chmod a+x initial-setup.sh
+
 sudo apt-get update
 
 # Installing build essentials
