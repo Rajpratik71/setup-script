@@ -22,6 +22,10 @@ sudo adduser $USER sudo
 # Switching shell to oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+#Some System tools
+sudo apt-get install -y deborphan
+
+
 # KVM acceleration and cpu checker
 sudo apt-get install -y cpu-checker
 sudo apt-get install -y qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils
