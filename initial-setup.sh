@@ -19,16 +19,13 @@ sudo passwd $USER
 # Adding sudo rights
 sudo adduser $USER sudo
 
-# Switching shell to oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
 #Some System tools
 sudo apt-get install -y deborphan
 
 
 # KVM acceleration and cpu checker
 sudo apt-get --allow-unauthenticated --no-install-recommends install -y cpu-checker
-sudo apt-get --allow-unauthenticated --no-install-recommends install -y qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils
+sudo apt-get --allow-unauthenticated --no-install-recommends install -y qemu-kvm ubuntu-vm-builder bridge-utils
 sudo apt-get --allow-unauthenticated --no-install-recommends install -y virt-manager
 
 # RPM and alien - sometimes used to install software packages
@@ -38,3 +35,6 @@ sudo apt-get --allow-unauthenticated --no-install-recommends install -y alien dp
 
 # Some general purpose system management tools
 sudo apt-get --allow-unauthenticated --no-install-recommends install -y bum gtkorphan bleachbit tlp
+
+# Switching shell to oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
