@@ -25,7 +25,7 @@ sudo apt-get install -y deborphan
 
 # KVM acceleration and cpu checker
 sudo apt-get --allow-unauthenticated --no-install-recommends install -y cpu-checker
-sudo apt-get --allow-unauthenticated --no-install-recommends install -y qemu-kvm ubuntu-vm-builder bridge-utils
+sudo apt-get --allow-unauthenticated --no-install-recommends install -y qemu-kvm ubuntu-vm-builder bridge-utils libvirt0
 sudo apt-get --allow-unauthenticated --no-install-recommends install -y virt-manager
 
 # RPM and alien - sometimes used to install software packages
