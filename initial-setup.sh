@@ -8,10 +8,10 @@
 
 chmod a+x initial-setup.sh
 
-sudo apt-get update
+sudo apt-get --allow-unauthenticated update
 
 # Installing build essentials
-sudo apt-get install -y build-essential libssl-dev nano git zsh curl wget
+sudo apt-get --allow-unauthenticated --no-install-recommends install -y build-essential libssl-dev nano git zsh curl wget
 
 #Setting up password login
 sudo passwd $USER
@@ -27,15 +27,14 @@ sudo apt-get install -y deborphan
 
 
 # KVM acceleration and cpu checker
-sudo apt-get install -y cpu-checker
-sudo apt-get install -y qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils
-sudo apt-get install -y virt-manager
-sudo apt-get install -y lib32z1 lib32ncurses5 lib32bz2-1.0 lib32stdc++6
+sudo apt-get --allow-unauthenticated --no-install-recommends install -y cpu-checker
+sudo apt-get --allow-unauthenticated --no-install-recommends install -y qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils
+sudo apt-get --allow-unauthenticated --no-install-recommends install -y virt-manager
 
 # RPM and alien - sometimes used to install software packages
-sudo apt-get install -y rpm
-sudo apt-get install -y alien dpkg-dev debhelper
+sudo apt-get --allow-unauthenticated --no-install-recommends install -y rpm
+sudo apt-get --allow-unauthenticated --no-install-recommends install -y alien dpkg-dev debhelper
 
 
 # Some general purpose system management tools
-sudo apt-get install -y bum gtkorphan bleachbit
+sudo apt-get --allow-unauthenticated --no-install-recommends install -y bum gtkorphan bleachbit tlp
