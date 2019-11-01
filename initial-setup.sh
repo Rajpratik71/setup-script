@@ -11,7 +11,7 @@ chmod a+x initial-setup.sh
 sudo apt-get --allow-unauthenticated update
 
 # Installing build essentials
-sudo apt-get --allow-unauthenticated --no-install-recommends install -y build-essential libssl-dev nano git zsh curl wget
+sudo apt-get --allow-unauthenticated --no-install-recommends install -y build-essential libssl-dev nano git zsh curl wget git-gui
 
 #Setting up password login
 sudo passwd $USER
@@ -34,7 +34,7 @@ sudo apt-get --allow-unauthenticated --no-install-recommends install -y alien dp
 
 
 # Some general purpose system management tools
-sudo apt-get --allow-unauthenticated --no-install-recommends install -y bum gtkorphan bleachbit tlp
+sudo apt-get --allow-unauthenticated --no-install-recommends install -y bum gtkorphan bleachbit tlp terminator smartmontools gsmartcontrol
 
 # Switching shell to oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
