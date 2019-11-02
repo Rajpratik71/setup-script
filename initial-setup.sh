@@ -30,11 +30,11 @@ sudo apt-get --allow-unauthenticated --no-install-recommends install -y virt-man
 
 # RPM and alien - sometimes used to install software packages
 sudo apt-get --allow-unauthenticated --no-install-recommends install -y rpm
-sudo apt-get --allow-unauthenticated --no-install-recommends install -y alien dpkg-dev debhelper
+sudo apt-get --allow-unauthenticated --no-install-recommends install -y alien dpkg-dev debhelper synaptic
 
 
 # Some general purpose system management tools
-sudo apt-get --allow-unauthenticated --no-install-recommends install -y bum gtkorphan bleachbit tlp terminator smartmontools gsmartcontrol
+sudo apt-get --allow-unauthenticated --no-install-recommends install -y bum gtkorphan bleachbit tlp terminator smartmontools gsmartcontrol deborphan
 
 # Switching shell to oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
